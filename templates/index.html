@@ -1,0 +1,12 @@
+{% extends "default:index.html" %}
+
+{% block description_source_license %}
+    <p>This tool lets you search through the profiles of all of the <a href="https://jsk.stanford.edu/fellows/alumni/">JSK Fellowship alumni</a> with Twitter accounts.</p>
+    <p>It refreshes daily using the <a href="https://twitter.com/JSKstanford/lists">Twitter lists</a> maintained by <a href="https://twitter.com/JSKstanford">@JSKstanford</a>.</p>
+    <p><a href="/jsk/jsk_fellows">Browse all fellows</a> or search their profiles:</p>
+    <form action="/jsk/jsk_fellows" method="get">
+        <p><label style="width: auto; padding-right: 1em;" for="_search">Search:</label><input id="_search" type="search" name="_search" value=""> <input type="submit" value="Search"></p>
+    </form>
+    
+    
+{% endblock %}
