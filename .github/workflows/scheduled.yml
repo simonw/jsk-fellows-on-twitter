@@ -56,6 +56,6 @@ jobs:
         NOW_TOKEN: ${{ secrets.NOW_TOKEN }}
       run: |-
         datasette publish now2 jsk.db \
-          --token "$NOW_TOKEN" \
+          --token $NOW_TOKEN \
           --project jsk-fellows-on-twitter \
           --metadata metadata.json

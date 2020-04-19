@@ -1,4 +1,3 @@
 twitter-to-sqlite
 datasette
-# datasette-publish-now
-https://github.com/simonw/datasette-publish-now/archive/15655d6f1d45b660ccd780566b265854e04a2d11.zip
+datasette-publish-now>=0.4.1a
