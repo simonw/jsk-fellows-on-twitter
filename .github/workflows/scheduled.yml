@@ -45,12 +45,12 @@ jobs:
         }" > auth.json
     - name: Create jsk.db using twitter-to-sqlite
       run: twitter-to-sqlite lists jsk.db JSKstanford --members
+    - name: Create SQL view
+      run: ./create-view.sh
     - name: Setup Node.js
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-    - name: Set up Zeit Now
-      run: yarn global add now
     - name: Deploy Datasette using Zeit Now
       env:
         NOW_TOKEN: ${{ secrets.NOW_TOKEN }}
