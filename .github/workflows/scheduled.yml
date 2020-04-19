@@ -41,7 +41,7 @@ jobs:
           \"api_key\": \"$TWITTER_API_KEY\",
           \"api_secret_key\": \"$TWITTER_API_SECRET_KEY\",
           \"access_token\": \"$TWITTER_ACCESS_TOKEN\",
-          \"access_token_secret\": \"$TWITTER_ACCESS_TOKEN_SECRET\",
+          \"access_token_secret\": \"$TWITTER_ACCESS_TOKEN_SECRET\"
         }" > auth.json
     - name: Create jsk.db using twitter-to-sqlite
       run: twitter-to-sqlite lists jsk.db JSKstanford --members
