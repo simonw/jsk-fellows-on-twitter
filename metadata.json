@@ -1,16 +1,18 @@
 {
-  "title": "JSK Fellows on Twitter",
-  "databases": {
-    "jsk": {
-      "tables": {
-        "jsk_fellows": {
-          "fts_table": "users_fts",
-          "fts_pk": "id",
-          "facets": [
-            "fellowship"
-          ]
+    "title": "JSK Fellows on Twitter",
+    "about": "simonw/jsk-fellows-on-twitter",
+    "about_url": "https://github.com/simonw/jsk-fellows-on-twitter",
+    "databases": {
+        "jsk": {
+            "tables": {
+                "jsk_fellows": {
+                    "fts_table": "users_fts",
+                    "fts_pk": "id",
+                    "facets": [
+                        "fellowship"
+                    ]
+                }
+            }
         }
-      }
     }
-  }
 }
