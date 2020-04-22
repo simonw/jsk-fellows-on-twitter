@@ -1,3 +1,3 @@
 twitter-to-sqlite
 datasette
-datasette-publish-now>=0.4.1a
+datasette-publish-now~=0.5
