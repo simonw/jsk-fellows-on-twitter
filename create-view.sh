@@ -1,5 +1,5 @@
 #!/bin/bash
-sqlite3 jsk.db "create view jsk_fellows as
+sqlite-utils create-view jsk.db jsk_fellows "
     select
         users.id,
         users.name,
@@ -20,5 +20,5 @@ sqlite3 jsk.db "create view jsk_fellows as
     where
         lists.slug like 'jsk-fellows%'
         and lists.slug not like '%projects'
-    group by users.id;"
-sqlite3 jsk.db .schema
+    group by users.id"
+sqlite-utils tables  --schema --table jsk.db
