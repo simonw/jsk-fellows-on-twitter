@@ -1,4 +1,4 @@
 sqlite-utils>=2.10
 twitter-to-sqlite
-datasette==0.43
+datasette==0.56.1
 datasette-publish-now==0.5.2
